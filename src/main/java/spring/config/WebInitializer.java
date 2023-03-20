@@ -1,4 +1,4 @@
-package spring.congig;
+package spring.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
