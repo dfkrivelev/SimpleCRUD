@@ -26,21 +26,21 @@ public class PersonService {
     }
 
     public void delete(Integer id) {
-       Person deletePerson = null;
-        for(Person person: persons){
-            if(person.getId() == id){
+        Person deletePerson = null;
+        for (Person person : persons) {
+            if (person.getId() == id) {
                 deletePerson = person;
                 break;
             }
         }
-        if(deletePerson != null) {
+        if (deletePerson != null) {
             persons.remove(deletePerson);
         }
     }
 
     public void update(Person person) {
-        for(Person pr : persons){
-            if(pr.getId() == person.getId()){
+        for (Person pr : persons) {
+            if (pr.getId() == person.getId()) {
                 pr.setFirstName(person.getFirstName());
                 pr.setLastName(person.getLastName());
             }

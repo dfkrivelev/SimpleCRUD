@@ -1,5 +1,12 @@
 package spring.controller;
 
+/**
+ * Java Prof. Homework #35
+ *
+ * @author Dzmitry Kryvialeu
+ * @version 16.03 - 20.03
+ */
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,7 +30,7 @@ public class PersonController {
     }
 
     @GetMapping("/add")
-    public String add(Model model){
+    public String add(Model model) {
         Person person = new Person();
         model.addAttribute("person", person);
         return "add";
@@ -48,7 +55,7 @@ public class PersonController {
     }
 
     @GetMapping("/update/{id}")
-    public String update(@PathVariable Integer id, Model model){
+    public String update(@PathVariable Integer id, Model model) {
         Person person = personService.getPersonById(id);
         model.addAttribute("person", person);
         return "update";

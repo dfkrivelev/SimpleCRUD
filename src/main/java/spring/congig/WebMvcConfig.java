@@ -1,12 +1,5 @@
 package spring.congig;
 
-/**
- * Java Prof. Homework #34
- *
- * @author Dzmitry Kryvialeu
- * @version 13.03 - 15.03
- */
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
